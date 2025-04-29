@@ -22,8 +22,12 @@ export namespace Config {
         CHAT: 'chat', //聊天
     }
 
-    /**socket 消息字段名 */
+    /** http 基础URL */
+    export const BaseUrl = 'http://140.143.97.54:51802'
+
+    /** http 接口名 */
     export const HttpApi = {
         login: 'user/login',//用户登录
+        loginGuest: '/client/auth/loginGuest',//游客登录
     }
 }

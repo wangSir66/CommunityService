@@ -1,11 +1,15 @@
 // index.ts
+
+import { Config } from "../../common/Config"
+import { HttpRequest } from "../../utils/HttpRequest"
+
 // 获取应用实例
 const app = getApp<IAppOption>()
 const defaultAvatarUrl = 'https://mmbiz.qpic.cn/mmbiz/icTdbqWNOwNRna42FI242Lcia07jQodd2FJGIYQfG0LAJGFxM4FbnQP6yfMxBgJ0F3YRqJCJ1aPAK2dQagdusBZg/0'
 
 Component({
   data: {
-    motto: 'Hello World',
+    motto: '科技改变生活',
     userInfo: {
       avatarUrl: defaultAvatarUrl,
       nickName: '',
@@ -50,6 +54,19 @@ Component({
         }
       })
       
+    },
+    async login() {
+      const { nickName } = this.data.userInfo
+      console.log('Click login...', nickName)
+      // 游客登录
+      const params = {
+        guestName: nickName
+      }
+      let request = new HttpRequest
+      request.BaseUrl = Config.BaseUrl
+      let response = await request.Post(Config.HttpApi.loginGuest, params)
+      console.log('response:\n', response)
+      // TODO: 设置token
     },
   },
 })

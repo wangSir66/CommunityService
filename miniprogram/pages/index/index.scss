@@ -27,6 +27,7 @@ page {
 
 .usermotto {
   margin-top: 200px;
+  color: blue;
 }
 
 .avatar-wrapper {
@@ -59,4 +60,14 @@ page {
 
 .nickname-input {
   flex: 1;
+}
+
+button{
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+.button-sp-area{
+  margin: 0 auto;
+  width: 60%;
 }
