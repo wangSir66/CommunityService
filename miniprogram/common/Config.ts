@@ -9,7 +9,7 @@ export namespace Config {
 
     /** http 地址 */
     export function HttpUrl(): string {
-        return `https://uat-api.dropball.net/api`;
+        return `http://140.143.97.54:51802/client`;
     }
 
     /**服务器端口 */
@@ -22,12 +22,9 @@ export namespace Config {
         CHAT: 'chat', //聊天
     }
 
-    /** http 基础URL */
-    export const BaseUrl = 'http://140.143.97.54:51802'
-
     /** http 接口名 */
-    export const HttpApi = {
-        login: 'user/login',//用户登录
-        loginGuest: '/client/auth/loginGuest',//游客登录
+    export enum HttpApi {
+        login = 'auth/login',//用户登录
+        loginGuest = 'auth/loginGuest',//游客登录
     }
 }

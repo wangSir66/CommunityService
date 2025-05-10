@@ -24,7 +24,7 @@ export class Store {
         }
     }
     /**http 消息队列 */
-    async onHttpSend(api: string, param: any = {}, type: number = 0) {
+    async onHttpSend(api: Config.HttpApi, param: any = {}, type: number = 0) {
         try {
             let res: any;
             switch (type) {
@@ -35,7 +35,21 @@ export class Store {
                     res = await this.Http.Post(api, param);
                     break;
             }
+            if (res?.data?.code == 200) {
+                const msg = res.data.data;
+                switch (api) {
+                    case Config.HttpApi.loginGuest:
+                        this.userInfo.loginGuest(msg);
+                        break;
+
+                    default:
+                        break;
+                }
+            }
+            else throw new Error(`Http res fail`);
+
             console.log('http 消息回调', res);
+            return res;
         } catch (err: any) {
             console.log('onHttpSend err', err);
         }

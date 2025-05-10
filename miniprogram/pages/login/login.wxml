@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<!-- <navigation-bar title="游客登录" back="{{false}}" color="black" background="#FFF"></navigation-bar> -->
+<scroll-view class="scrollarea" scroll-y type="list">
+  <view class="container">
+    <view class="usermotto">
+      <text class="user-motto">{{motto}}</text>
+    </view>
+    <view class='userinfo_btns'>
+      <button type="primary" bindtap="wxLogin">微信登录</button>
+      <button type="primary" bindtap="ykLogin">游客登录</button>
+    </view>
+    <view class="page-radio">
+      <label class="radio">
+        <radio value="radioChecked" checked="{{radioChecked}}" bindtap='radioChange'/>你已同意并阅读《用户服务协议》《隐私权协议》 《软件使用许可协议》 </label>
+    </view>
+  </view>
+</scroll-view>

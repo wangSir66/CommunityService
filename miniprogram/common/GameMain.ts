@@ -3,7 +3,7 @@ import { Store } from "./Store";
 
 export class GMain {
     private readonly GameNetwork: Network;
-    private readonly Store: Store;
+    readonly Store: Store;
     private static Self: GMain;
     constructor() {
         this.GameNetwork = new Network();
