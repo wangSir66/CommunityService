@@ -9,7 +9,7 @@ export namespace Config {
 
     /** http 地址 */
     export function HttpUrl(): string {
-        return `http://140.143.97.54:51802/client`;
+        return `http://140.143.97.54/client`;
     }
 
     /**服务器端口 */
