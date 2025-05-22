@@ -1,17 +1,5 @@
-<scroll-view
-  type="custom"
-  scroll-y
->
-   <list-builder
-    list="{{list}}"
-    child-count="{{list.length}}"
-    child-height="200"
-    bind:itembuild="onItemBuild"
-    bind:itemdispose="onItemDispose"
-  >
-    <view slot:item slot:index style="height: 200px;width: 200px">
-      <view>{{index}}</view>
-    </view>
-  </list-builder>
-</scroll-view>
-<text>1221</text>
+<view class="IndexPage">
+  <view class='top'>
+    
+  </view>
+</view>
