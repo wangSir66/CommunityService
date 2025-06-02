@@ -102,8 +102,11 @@ page {
         image{
           width: 25px;
           height: 25px;
-          // margin-bottom: 10px;
           margin-top: 10px;
+        }
+        text{
+          font-size: 12px;
+          margin-top: 5px;
         }
       }
 
@@ -125,7 +128,7 @@ page {
           }
         }
         text{
-          margin-top: -5px;
+          margin-top: 0px;
         }
       }
     }
