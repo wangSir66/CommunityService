@@ -866,7 +866,7 @@ declare namespace WechatMiniprogram {
         {
             /** 输入框高度(px) */
             height: number
-            /** 输入框高度(rpx) */
+            /** 输入框高度(px) */
             heightRpx: number
             /** 行数 */
             lineCount: number

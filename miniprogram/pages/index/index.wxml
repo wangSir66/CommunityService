@@ -1,5 +1,55 @@
-<view class="IndexPage">
-  <view class='top'>
-    
+<view class="IndexPage" style="{{innerPaddingRight}}; {{safeAreaTop}};">
+  <view class="top">
+    <select prop-array='{{selectArray}}'></select>
+  </view>
+  <view class="sousuo_view">
+    <input class="weui-input" placeholder="输入搜索内容" />
+    <button class="ssBtn" type="warn">搜 索</button>
+  </view>
+  <scroll-view scroll-y="true" class="scroll" bindscrolltoupper="upper"
+    bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}"
+    scroll-top="{{scrollTop}}">
+    <view class="sc_item" wx:for="{{list}}" wx:key="indx" style="margin-left: {{index%2 == 0 ? '0px' : '16px'}};margin-top: {{index != 0 && index != 1 ? '16px' : '0px'}}">
+      <image class="imageBg" src="{{item.img}}"></image>
+      <view class="item_content">
+        <text class="itemName">{{item.name}}</text>
+        <view class="itemStatus">
+          <image style="width:15px;height:15px" src="../../static/rwdt_icon_time.png"></image>
+          <text>{{['已发布','已领取'][item.status]}}</text>
+          <text style="color:#EB5343">{{item.time}}</text>
+          <image style="width:15px;height:15px" src="../../static/rwdt_icon_warn.png"></image>
+        </view>
+        <view>
+          <image style="width:15px;height:15px" src="../../static/rwdt_icon_dw.png"></image>
+          <text>{{item.area}}</text>
+        </view>
+        <view>
+          <image class="head" style="width:15px;height:15px" src="../../static/rwdt_icon_head.png"></image>
+          <text>{{item.nickName}}</text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+  <view class="bottom">
+    <view>
+      <image src="../../static/rwdt_bottom_btn_mg.png"></image>
+      <text>消息</text>
+    </view>
+    <view>
+      <image src="../../static/rwdt_bottom_btn_rw.png"></image>
+      <text>待完成</text>
+    </view>
+    <view class="fbrw">
+      <view><image src="../../static/rwdt_bottom_btn_fb.png"></image></view>
+      <text>发布任务</text>
+    </view>
+    <view>
+      <image src="../../static/rwdt_bottom_btn_wc.png"></image>
+      <text>已发布</text>
+    </view>
+    <view>
+      <image src="../../static/rwdt_bottom_btn_mi.png"></image>
+      <text>我的</text>
+    </view>
   </view>
 </view>
