@@ -1,3 +1,38 @@
-<view>
-  <text>发布任务</text>
+<view class="publictask">
+  <navigation-bar title="服务详情"></navigation-bar>
+  <view class="content">
+    <text class="title">{{title}}</text>
+    <textarea class="textarea" placeholder="备注物品描述、送达要求"
+      placeholder-style="color:#9E9E9E;font-size:12px"></textarea>
+    <view class="message">
+      <view class="message_item">
+        <view>
+          <image class="head" style="width:18px;height:18px" src="../../static/rwdt_icon_head.png"></image>
+          <text>{{msg.nickName}}</text>
+        </view>
+        <view class="message_view">
+          <image class="head" style="width:14px;height:17px" src="../../static/rwdt_icon_phone.png"></image>
+          <text>{{msg.phone}}</text>
+        </view>
+      </view>
+      <view class="message_item message_item1">
+        <view>
+          <image style="width:13px;height:15px" src="../../static/rwdt_icon_dw.png"></image>
+          <text class="view_txt">{{msg.area}}</text>
+        </view>
+        <view class="message_view">
+          <image class="head" style="width:15px;height:15px" src="../../static/rwdt_icon_time.png"></image>
+          <text class="view_txt">{{['已发布','已领取'][msg.status]}}</text>
+          <text style="color:#EB5343">{{msg.time}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="qjm"></view>
+  </view>
+  <view class="bottom">
+    <tetx class="tip">￥</tetx>
+    <tetx class="total">{{totale}}</tetx>
+    <tetx class="mx">明细</tetx>
+    <button class="rzBtn">接 受</button>
+  </view>
 </view>

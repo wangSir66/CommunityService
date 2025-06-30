@@ -1,0 +1,30 @@
+<view class='com-taskPopup'>
+  <view class='com-sContent'>    
+    <view class='com-close'>X</view>
+    <view class='com-sTxt-ttl'>选择服务类型</view>
+    <view class='com-leixing'>
+      <button class="Btns" wx:for="{{btnList}}" wx:key="id" style="margin-left:{{index%3 == 0 ? '0' : '10px'}}">{{item.btnName}}</button>
+    </view>
+    <view class='com-bc'>
+      <view class='load-img1' bindtap="addImg">
+        <image class='load-img' src="{{imageUrl}}" mode="aspectFill"></image>
+      </view>
+      <text class="bc-txt">补充物品图片</text>
+      <text class="bc-txt1">便于社区服务员更加快捷了解服务内容</text>
+    </view>
+    <view class='com-sTxt'>
+      <text class="com-sTxt1">选择物品重量*</text>
+      <text class="com-sTxt2">配送员取件时会估计物品重量，超重需要补齐差价，物品过重无法配送不知道重量</text>
+    </view>
+    <view class="com-jl">
+      <view class="com-jl-tips">
+        <text>小于5公斤</text>
+        <text>重量附加费用0元<view>?</view></text>
+      </view>
+      <view class="body-view">
+        <slider bindchange="slider4change" min="5" max="20" show-value />
+      </view>
+    </view>
+    <button class="rzBtn">确 定</button>
+  </view>
+</view>

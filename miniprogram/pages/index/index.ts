@@ -68,7 +68,8 @@ Component({
         nickName: '哼着哼着就跑掉了',
         head: ''
       }
-    ]
+    ],
+    showType: 1
   },
   lifetimes: {
     attached() {

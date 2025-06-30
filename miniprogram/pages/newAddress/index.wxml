@@ -1,0 +1,27 @@
+<view class="newaddress">
+  <navigation-bar title="{{title}}"></navigation-bar>
+  <view class="tip">
+    <text>地址信息</text>
+    <label class="radio">
+      <radio value="radioChecked" checked="{{radioChecked}}" bindtap='radioChange'  />默认收货地址</label>
+  </view>
+  <view class='com-sTxt'>
+    <text> 联 系 人</text>
+    <input placeholder='姓名'></input>
+  </view>
+  <view class='com-sTxt'>
+    <text> 手 机 号</text>
+    <input placeholder='手机号'></input>
+  </view>
+  <view class='com-sTxt'>
+    <text style="font-size:13px">所在小区</text>
+    <input placeholder='小区名称'></input>
+  </view>
+  <view class='com-sTxt'>
+    <text> 门 牌 号</text>
+    <input placeholder='门牌号'></input>
+  </view>
+  <view class="bottom">
+    <button class="rzBtn">保 存</button>
+  </view>
+</view>

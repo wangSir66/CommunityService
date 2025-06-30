@@ -1,0 +1,18 @@
+<view class="address">
+  <navigation-bar title="{{title}}"></navigation-bar>
+  <scroll-view class="address_sc" scroll-y>
+    <view class="container">
+      <view wx:for="{{list}}" data-index="{{index}}" wx:key='index' class='Item'>
+        <view class="item_left">
+          <text class="left_name">{{item.name}} {{ item.phone }}</text>
+          <text>{{item.address}}</text>
+        </view>
+        <image style="width:15px;height:18px" src="../../static/address_icon_bi.png"></image>
+      </view>
+    </view>
+  </scroll-view>
+  <view class="bottom">
+    <button class="glBtn">{{btnTitle}}</button>
+    <button class="rzBtn">+ 新增{{title}}</button>
+  </view>
+</view>

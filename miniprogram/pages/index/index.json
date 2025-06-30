@@ -1,5 +1,8 @@
 {
     "usingComponents": {
-      "select": "/components/select/select"
+      "select": "/components/select/select",
+      "TaskPopup": "/components/taskPopup/taskPopup",
+      "IDentity": "/components/identity/identity",
+      "Mine": "/pages/mine/index"
     }
   }

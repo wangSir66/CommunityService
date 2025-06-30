@@ -6,7 +6,8 @@
     "pages/waitCompleted/index",
     "pages/publishTask/index",
     "pages/completed/index",
-    "pages/mine/index",
+    "pages/address/index",
+    "pages/newAddress/index",
     "pages/logs/logs"
   ],
   "window": {

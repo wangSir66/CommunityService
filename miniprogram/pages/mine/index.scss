@@ -1,6 +1,53 @@
 /**index.scss**/
-page {
+.mine {
   height: 100vh;
-  display: flex;
-  flex-direction: column;
+  background-color: #F8F8F8;
+  padding: 14px 16px;
+
+  .head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .icon {
+      width: 60px;
+      height: 60px;
+      background-color: rgba($color: #000000, $alpha: 0.4);
+      border-radius: 50%;
+    }
+
+    .txts {
+      display: flex;
+      flex-direction: column;
+      margin-left: 10px;
+      font-weight: 550;
+
+      .nc {
+        font-size: 18px;
+      }
+
+      .id {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .mine_sc {
+    background-color: white;
+    margin-top: 10px;
+
+    .item {
+      height: 50px;
+      font-weight: 600;
+      margin: 0 10px;
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .line {
+      border-bottom: 1px #E9E9E9 solid;
+    }
+  }
 }

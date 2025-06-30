@@ -1,0 +1,19 @@
+<view class='com-identity'>
+  <view class='com-sContent'>
+    <view class='com-close'>X</view>
+    <view class='com-sTxt-ttl'>实名认证</view>
+    <view class='com-sTxt'>
+      <text>姓 名</text>
+      <input></input>
+    </view>
+    <view class='com-sTxt'>
+      <text>身份证</text>
+      <input></input>
+    </view>
+    <view class='com-sTxt'>
+      <text>所属小区</text>
+      <select prop-array='{{selectArray}}'></select>
+    </view>
+    <button class="rzBtn">认 证</button>
+  </view>
+</view>

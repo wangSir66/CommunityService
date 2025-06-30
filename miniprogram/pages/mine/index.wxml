@@ -1,3 +1,25 @@
-<view>
-  <text>我的</text>
+<view class="mine" style="{{safeAreaTop}};">
+    <view class="head">
+        <image class="icon" src="{{headUrl}}"></image>
+        <view class="txts">
+            <text class="nc">{{nickName}}</text>
+            <text class="id">ID:{{id}}</text>
+        </view>
+    </view>
+    <scroll-view class="mine_sc" scroll-y>
+        <view class="container">
+            <view class="item line">
+                <text>地址管理</text>
+                <text>＞</text>
+            </view>
+            <view class="item line">
+                <text>任务列表</text>
+                <text>＞</text>
+            </view>
+            <view class="item">
+                <text>退出登录</text>
+                <text>＞</text>
+            </view>
+        </view>
+      </scroll-view>
 </view>

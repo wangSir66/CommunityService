@@ -1,0 +1,115 @@
+.com-taskPopup {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    .com-sContent {
+        width: calc(100% - 30px);
+        height: fit-content;
+        background-color: white;
+        border-radius: 10px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        bottom: 0;
+        padding: 15px;
+        
+        .com-close{
+            font-weight: 600;
+            width: 25px;
+            height: 25px;
+            text-align: center;
+            border-radius: 50%;
+            position: absolute;
+            top: -10px;
+            right: 0;
+            background-color: rgba($color: #000000, $alpha: 0.5);
+        }
+
+        .com-sTxt-ttl {
+            width: 100%;
+            text-align: left;
+            font-size: 16px;
+            font-weight: 600;
+            padding-bottom: 15px;
+        }
+
+        .com-leixing {
+            width: 100%;
+
+            .Btns {
+                width: calc((100% - 20px)/3);
+                float: left;
+                padding: 5px 0;
+                font-size: 14px !important;
+                margin-top: 5px;
+            }
+        }
+        .com-bc{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 10px;
+            .load-img1 > image{
+                width: 30px;
+                height: 30px;
+                background-color: gray;
+            }
+            .bc-txt{
+                font-weight: 600;
+                font-size: 14px;
+                margin-left: 5px;
+                color: #D9001B;
+            }
+            .bc-txt1{
+                font-size: 12px;
+                margin-left: 10px;
+            }
+        }
+
+        .com-sTxt {
+            width: 100%;
+            padding: 15px 0;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+
+            .com-sTxt1 {
+                font-weight: 600;
+                font-size: 16px;
+            }
+            .com-sTxt2 {
+                margin-top: 10px;
+                font-size: 12px;
+            }
+        }
+        
+        .com-jl{
+            padding-bottom: 20px;
+            .com-jl-tips{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-size: 12px;
+            }
+            .body-view{
+                padding: 15px 0;
+                width: 300px;
+            }
+        }
+
+        .rzBtn {
+            width: 120px;
+            height: 42px;
+            background-color: #ED5544;
+            color: white;
+            border-radius: 19px;
+            margin-bottom: 20px;
+        }
+    }
+}
